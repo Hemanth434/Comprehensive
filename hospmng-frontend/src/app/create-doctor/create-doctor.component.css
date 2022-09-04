@@ -1,0 +1,8 @@
+.center{
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: bisque;
+}
+div small{
+    color: red;
+}

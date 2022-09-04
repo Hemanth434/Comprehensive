@@ -1,0 +1,15 @@
+<div class="col-md-6 offset-md-3 center shadow-lg p-3 mb-5 bg-white rounded container text-center">
+    <h3>Please Select the doctor</h3><br>
+    <select id="doctor" #doctor="ngModel" [(ngModel)]="doctor.name" (change)="getDetails(doctor.name)">
+        <option *ngFor="let docl of doctors ;let indexOfelement=index;" value="{{docl.id}}">{{docl.name}}</option>
+    </select><br><br><br>
+</div>
+<div class="col-md-6 offset-md-3 center shadow-lg p-3 mb-5 bg-white rounded container text-center">
+    <p>Details of your doctor</p>
+    <ul style="list-style:none;" class="p-3">
+        <li class="pt-1">Doctor Name :: {{doc.name}}</li>
+        <li class="pt-1">Specialization :: {{doc.specialization}}</li>
+        <li class="pt-1">No of Patients treated :: {{doc.patientsAttended}}</li>
+    </ul>
+</div>
+

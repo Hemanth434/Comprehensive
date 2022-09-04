@@ -1,0 +1,16 @@
+<div class="col-md-6 offset-md-3 center shadow-lg p-3 mb-5 bg-white rounded container text-center">
+    <h3>Please Enter your ID</h3><br>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="number"  #search value="searche" placeholder="Enter your Id">
+        <button type="submit" (click)="onClick(search.value)">Search</button>
+    </form>
+</div>
+<div class="col-md-6 offset-md-3 center shadow-lg p-3 mb-5 bg-white rounded container text-center">
+    <p>Details of the patient</p>
+    <ul style="list-style:none;" class="p-3">
+        <li class="pt-1"> Name:: {{name}}</li>
+        <li class="pt-1"> Visited Date:: {{date}}</li>
+        <li class="pt-1"> Doctor name :: {{visitedDoctor}}</li>
+        <li class="pt-1"> prescription :: {{prescription}}</li>
+    </ul>
+</div>
